@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SWISS - WEB SERVER</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="module" src="js/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/controlstyle.css">
+    <link rel="shortcut icon" type="x-icon" href="icon/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d5ed33242f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="pre-loader"></div>
+
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="icon/logo0.png" height="150px">
+            </a>
+        </div>
+        <div class="title">WEB SERVER - NODEMCU ESP8266</div>
+    </header>
+
+    <div class="container">
+
+        <section class="waste">
+            <div id="cube" class="cube" onclick="action()">
+                <div class="top"></div>
+                <div class="divider"></div>
+                <div>
+                    <span class="sidel" style="--i:0;"></span>
+                    <span class="sidef" style="--i:1;"></span>
+                    <span class="sider" style="--i:2;"></span>
+                    <span class="sideb" style="--i:3;"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <h1 class="title" style="text-align:left">Informações do sistema</h1>
+            <div class="info_body">
+                <div>
+                    <h2 class="system" style="text-align:left">Status do sistema</h2>
+                    <div class="info_icon">
+                        <i class="fa-solid fa-square-check fa-beat" style="color: #ffffff;"></i>
+                        <h3>Operacional</h3>
+                    </div>
+                    <h2 class="database" style="text-align:left">Conexão ao banco de dados</h2>
+                    <div class="info_icon">
+                        <i class="fa-solid fa-wifi fa-beat" style="color: #ffffff;"></i>
+                        <h3>Conected</h3>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="cor" style="text-align:left">Tipologia da cor do material</h2>
+                    <div class="info_icon">
+                        <i class="fa-solid fa-circle fa-beat" style="color: #ffffff;"></i>
+                        <h3 class="cor_ball"></h3>
+                    </div>
+                    <h2 class="material" style="text-align:left">Tipologia do material</h2>
+                    <div class="info_icon">
+                        <i class="fa-solid fa-magnet fa-beat" style="color: #ffffff;"></i>
+                        <h3 class="material_ball"></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-xs-3">
+                <a href="home.html">
+                    <img src="icon/logo0.png" height="150px">
+                </a>
+            </div>
+            <div class="col-xs-6">
+                <p>© 2024 Desenvolvido pelo grupo SWISS.</p>
+                <p>Todos os direitos reservados ao grupo e a instituição de ensino.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var loader = document.getElementById("pre-loader");
+
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.display = "none";
+            }, 1500)
+        });
+    </script>
+
+</body>
+
+</html>
